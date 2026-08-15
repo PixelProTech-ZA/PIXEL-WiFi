@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PIXEL WiFi — Network X-Ray</title>
+<meta name="description" content="A real Wi-Fi and network diagnostic laboratory. See your connection, understand your network, know what to do next.">
+<meta name="theme-color" content="#0a0c0e">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div id="offline-banner">LIVE NETWORK TESTS UNAVAILABLE OFFLINE — cached education content still works.</div>
+
+<div id="topbar">
+  <div class="brand" id="brand-home">
+    <img src="./icon-192.png" alt="Pixel WiFi">
+    <div>
+      <div class="word"><b>PIXEL</b> WiFi</div>
+      <div class="sub">Network X-Ray</div>
+    </div>
+  </div>
+  <button id="mobile-nav-toggle" aria-label="Menu">☰</button>
+  <button class="btn small hidden" id="install-btn" style="margin-left:10px;">INSTALL</button>
+  <div class="transport-chip" id="transport-chip">
+    <span class="dot unk"></span>
+    <span class="chip-text mono">DETECTING…</span>
+  </div>
+</div>
+
+<div id="app-shell">
+  <nav id="nav"></nav>
+  <main id="main-content"></main>
+</div>
+
+<div id="toast"></div>
+
+<script src="./data.js"></script>
+<script src="./diagnostics.js"></script>
+<script src="./explain.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
